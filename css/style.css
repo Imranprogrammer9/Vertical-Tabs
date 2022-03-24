@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #ddd;
+  font-family: "Roboto", sans-serif;
+}
+/* Main Tab Area */
+.main-tab-area {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 720px;
+  height: 380px;
+  padding: 30px 20px;
+  background-color: white;
+  box-shadow: 5px 5px 10px 5px #cccc;
+  overflow: hidden;
+  border-left: 2px solid #8500ed;
+}
+/* Tabs */
+.tabs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 680px;
+  height: 360px;
+  padding: 30px 20px;
+  background-color: white;
+  box-shadow: 5px 5px 10px 5px #cccc;
+  overflow: hidden;
+}
+/* Tabs > Tab-Header */
+.tabs .tab-header {
+  float: left;
+  width: 180px;
+  height: 100%;
+  border-right: 1px solid #ccc;
+  padding: 50px 0;
+}
+/* Tabs > Tab-Header Nav-Icon */
+.tabs .tab-header .nav-icon {
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+  color: #888;
+  padding-left: 10px;
+}
+/* Hover and Active Effect */
+.tabs .tab-header > div.nav-icon:hover,
+.tabs .tab-header > div.active {
+  color: #8500ed;
+}
+/* Tab Indicator */
+.tab-indicator {
+  position: absolute;
+  width: 4px;
+  height: 50px;
+  background-color: #8500ed;
+  left: 198px;
+  top: 80px;
+  transition: all 500ms ease-in;
+}
+.tab-content {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+.tab-content div.tab {
+  position: absolute;
+  text-align: center;
+  height: 50px;
+  transition:all 500ms ease-in-out;
+  top: -200%;
+}
+.tab-content div.active {
+  top: 0;
+}
+.tab-content div.tab i {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #8500ed;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 25px;
+  line-height: 50px;
+}
+.tab-content div.tab h2,
+p {
+  padding: 10px 30px;
+}
